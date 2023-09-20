@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: OrderService
+  labels:
+    app: OrderService
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: OrderService
